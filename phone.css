@@ -1,0 +1,131 @@
+/* Nvabar */
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li a{
+    padding: 14px;
+    margin: 0px;
+}
+
+/* Home */
+
+#home{
+    padding-top: 235px;
+    padding-right: 120px;
+    padding-left: 124px
+}
+
+#home::before{
+    content: "";
+    position: abso4;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#home h1{
+    padding-top: 8rem;
+}
+
+#home p{
+    width: 20rem;
+}
+
+
+.Best{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid white;
+    align-items: center;
+}
+
+.description h2{
+    margin-top: 2rem;
+}
+
+.description p{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+/* Services */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+}
+
+.services-container::before{
+    content: "";
+    background: url(/img/food4.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 210%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.services-container h1{
+    padding-top: 10rem;
+}
+
+#services .box{
+    margin: 10px;
+}
+
+#services .box img{
+    width: 50%;
+}
+
+/* About Us */
+
+#about-box{
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+#about::before {
+    content: "";
+    background: url(/img/food2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 172%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#about-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+/* Contact Us */
+
+#contact h1 {
+    padding-top: 12rem;
+}
+
+#contact-box form {
+    width: 80%;
+    margin-right: 10px;
+}

@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#logo{
+    margin: 17px 25px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#logo img{
+    height: 60px;
+    width: 83px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 160px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 207px;
+}
+
+#home::before{
+    content: "";
+    background: url(/img/food3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+#home h1{
+    text-align: center;
+    font-family: 'Balthazar', serif;
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Balthazar', serif;
+}
+
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#best{
+    margin-top: 10rem;
+    background-color: rgb(115 111 111);
+}
+
+#best h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    margin: 12px 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(86, 14, 14);
+    color: white;
+    border-radius: 30px;
+}
+
+.Best{
+    display: flex;
+    margin: 35px;
+}
+
+.Best img{
+    height: 20rem;
+    width: 15rem;
+}
+
+#best1 img,
+#best3 img{
+    margin: 10px 50px;
+    padding: 10px 50px;
+}
+
+#best2 img,
+#best4 img{
+    margin: 10px 50px;
+    padding: 10px 50px;
+}
+
+.description{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.description h2{
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.description p{
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Services */
+
+.services-container h1{
+    padding-top: 9rem;
+    color: white;
+}
+
+.services-container::before{
+    content: "";
+    background: url(/img/food4.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#services{
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(234, 231, 231);
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+}
+
+#services .box p{
+    font-family: 'Balthazar', serif;
+}
+
+/* About Us */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about::before{
+    content: "";
+    background: url(/img/food2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#about h1{
+    padding-top: 10rem;
+    font-size: 4rem;
+}
+
+#about-box{
+    margin-left: 12rem;
+    width: 76%;
+}
+
+#about-box p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+
+/* Contact */
+
+#contact{
+    height: 438.4px;
+}
+
+#contact h1{
+    padding-top: 90px;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    background: url(/img/food1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+.form-group{
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Balthazar', serif;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
